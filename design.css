@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5a5a5a;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+
+/* Nav Links */
+.nav .links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.nav .links li a:hover {
+    background: #ffcc33;
+    color: black;
+    transform: scale(1.05);
+}
+
+.nav .links li a.active {
+    background: #ffda6a;
+    color: black;
+}
+
+/* RESPONSIVE GRID */
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+/* PRODUCT CARD */
+figure {
+    position: relative;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(233, 172, 5, 0.35);
+    transition: 0.3s ease;
+    max-width: 800px;
+    margin: 20px 10px;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGES */
+figure img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px solid #8a2d2d;
+    transition: 0.5s ease;
+}
+
+figure:hover img {
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+/* CAPTION UNDER IMAGE */
+figcaption {
+    padding: 10px;
+    font-size: 1rem;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+/* HOVER OVERLAY */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;      /* stack h3, price, button vertically */
+    justify-content: center;     /* vertical centering */
+    align-items: center;         /* horizontal centering */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+figure:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.image-overlay .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: rgba(155, 155, 155, 0.5);
+    padding: 6px 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #ffda6a;
+}
+/* add to cart */
+.image-overlay button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #555554;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.image-overlay button:hover {
+    transform: scale(1.05);
+    background: #ffdb66;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #767777;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* contact sect */
+.contact {
+    color: white;
+    background-color: rgb(92, 91, 91);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact a {
+    color: #06d6c5;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 0.8rem;
+}
+
+.social-links a {
+  color: #fffdfd;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #081022; /* change hover color */
+}
